@@ -11,7 +11,14 @@ from datetime import datetime as dt
 hosts_path = "/etc/hosts"
 hosts_temp = "hosts"
 redirect = "127.0.0.1"
-websites = ["www.facebook.com", "facebook.com", "www.microsoft.com", "microsoft.com"]
+websites = []
+
+many_websites = int(input("How many websites do you want to start blocking? "))
+print("Input the websites...\n")
+
+for i in range(many_websites):
+	website = str(input()) 
+	websites.append(website)
 
 while True:
 
